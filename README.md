@@ -1,4 +1,4 @@
-# AndroShell
+# AndroShell [Root Access Required]
 
 <img src="img/AndroShell.png" height="200" width="200">
 
