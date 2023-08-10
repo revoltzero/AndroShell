@@ -11,3 +11,4 @@ With AndroShell, you can execute commands, perform system and root level operati
 
 ### Minimum Required Android Version:
 1. Android 4.1
+2. Minimum Android 8.1 is required for optimum performance
