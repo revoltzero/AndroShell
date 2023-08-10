@@ -7,7 +7,7 @@ With AndroShell, you can execute commands, perform system and root level operati
 1. [Version 0.0.1](https://github.com/theresurrectedodyssey/AndroShell/tree/main/Releases/Version0.0.1)
 
 ### Requirements:
-1. Root Access Required
+1. Device needs to be Rooted
 
 ### Minimum Required Android Version:
 1. Android 4.1
