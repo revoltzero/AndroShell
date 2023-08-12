@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AndroShell</title>
+    <link rel="icon" type="image/png" href="img/AndroShell.png">
+    <link rel="stylesheet" type="text/css" href="style.css">        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier Prime', monospace;
+        }
+        header {
+            background-color: #fe7f28;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 20px;
+            position: relative;
+        }
+        .nav-logo {
+            display: flex;
+            align-items: center;
+        }
+        .nav-logo img {
+            height: 70px; 
+            width: auto; 
+            margin-right: 10px; 
+        }
+        .nav-links {
+            background-color: #fe7f28;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 20px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .nav-links:hover {
+            background-color: #ff9900;
+            transform: translateY(-5px);
+            color: black;
+        }
+        .about-us-button {
+            background-color: black;
+            color: #fe7f28;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 20px;
+            transition: background-color 0.3s, transform 0.3s, color 0.3s;
+            position: absolute;
+            top: 50%;
+            right: 30px;
+            transform: translateY(-50%);
+            text-decoration: none;
+            font-family: 'Courier Prime', monospace;
+        }
+        .about-us-button:hover {
+            background-color: white;
+            transform: translateY(-50%) translateX(3px);
+            color: black;
+        }
+        .section-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            max-height: calc(100vh - 40px); 
+            overflow: hidden; 
+            padding: 50px;
+        }
+        .phone-image {
+            flex: 1;
+            max-width: 50%;
+            max-height: 75vh; 
+            width: auto;
+            height: auto;
+            object-fit: contain; 
+        }
+        .description {
+            flex: 1;
+            padding: 20px;
+            color: white;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+        .download-button {
+            background-color: #fe7f28;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 20px;
+            transition: background-color 0.3s, transform 0.3s;
+            text-decoration: none; 
+        }
+        .download-button:hover {
+            background-color: #ff9900;
+            transform: translateY(-5px);
+            color: black;
+        }
+        .colored-header {
+            color: #fe7f28;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-logo">
+            <a href="https://theresurrectedodyssey.github.io/AndroShell/">
+                <img src="img/AndroShell_header.png" alt="AndroShell Logo">
+            </a>
+        </div>
+        <a href="https://theresurrectedodyssey.github.io/" class="about-us-button">About Us</a>
+    </header>
+    
+    <section class="section-container">
+        <img class="phone-image" src="img/AndroShell_execution.png" alt="AndroShell">
+        <div class="description">
+            <h1 class="colored-header">About AndroShell</h1>
+            <p>AndroShell is a versatile Android app that empowers Android pentesters to interact with their device using a custom terminal interface. With AndroShell, you can execute commands, perform system and root-level operations. It gives you the power of ADB Shell within the app.</p>
+            <h2 class="colored-header">Requirements</h2>
+            <p>Device needs to be Rooted</p>
+            <h2 class="colored-header">Minimum Required Android Version</h2>
+            <p>Android 4.1</p>
+            <p>Minimum Android 8.1 is required for optimum performance</p>
+            <div class="button-container">
+                <a href="https://github.com/theresurrectedodyssey/AndroShell/blob/main/Releases/Version0.0.1/" class="download-button">Download AndroShell v0.0.1</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
