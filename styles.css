@@ -84,17 +84,3 @@ footer {
     width: 100%;
 }
 
-/* ... Previous CSS ... */
-
-/* Apple-like animations */
-section {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.5s, transform 0.5s;
-}
-
-/* Add specific animations for each section */
-#about.animate, #features.animate, #screenshots.animate, #download.animate {
-    opacity: 1;
-    transform: translateY(0);
-}
