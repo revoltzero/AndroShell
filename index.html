@@ -20,7 +20,8 @@
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			padding: 10px 20px;
+			padding: 5px 20px;
+			position: relative;
 		}
 		.nav-logo {
 			display: flex;
@@ -44,6 +45,27 @@
 		.nav-links:hover {
 			background-color: #ff9900;
 			transform: translateY(-5px);
+			color: black;
+		}
+		.about-us-button {
+			background-color: black;
+			color: #fe7f28;
+			padding: 10px 20px;
+			border: none;
+			cursor: pointer;
+			font-size: 16px;
+			border-radius: 0 20px 20px 0; /* Semi-circular on right side */
+			transition: background-color 0.3s, transform 0.3s, color 0.3s;
+			position: absolute;
+			top: 50%;
+			right: -10px;
+			transform: translateY(-50%);
+			text-decoration: none;
+			font-family: 'Courier Prime', monospace;
+		}
+		.about-us-button:hover {
+			background-color: white;
+			transform: translateY(-50%) translateX(3px);
 			color: black;
 		}
 		.section-container {
@@ -74,7 +96,7 @@
 			align-items: flex-start;
 			margin-top: 20px;
 		}
-		.download-button, .nav-links {
+		.download-button, .about-us-button {
 			background-color: #fe7f28;
 			color: white;
 			padding: 10px 20px;
@@ -84,13 +106,11 @@
 			border-radius: 20px;
 			transition: background-color 0.3s, transform 0.3s;
 		}
-
-		.download-button:hover, .nav-links:hover {
+		.download-button:hover, .about-us-button:hover {
 			background-color: #ff9900;
 			transform: translateY(-5px);
 			color: black;
 		}
-
 		.colored-header {
 			color: #fe7f28;
 			margin-top: 10px;
@@ -104,9 +124,7 @@
 				<img src="img/AndroShell_header.png" alt="AndroShell Logo">
 			</a>
 		</div>
-		<ul class="nav-links">
-			<li><a href="https://theresurrectedodyssey.github.io/" class="nav-link">About Us</a></li>
-		</ul>
+		<a href="https://theresurrectedodyssey.github.io/" class="about-us-button">About Us</a>
 	</header>
 	
 	<section class="section-container">
@@ -121,7 +139,6 @@
 			<p>Minimum Android 8.1 is required for optimum performance</p>
 			<div class="button-container">
 				<button class="download-button">Download AndroShell v0.0.1</button>
-				<button class="nav-links"><a href="https://theresurrectedodyssey.github.io/" class="nav-link">About Us</a></button>
 			</div>
 		</div>
 	</section>
