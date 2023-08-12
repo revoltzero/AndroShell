@@ -50,11 +50,14 @@
 			display: flex;
 			flex-direction: row;
 			align-items: center;
+			/* Limit the maximum height to prevent scrolling */
+			max-height: calc(100vh - 40px); /* Subtract header height and padding */
+			overflow: hidden; /* Hide overflow if the content overflows */
 			padding: 50px;
 		}
 		.phone-image {
 			flex: 1;
-			max-width: 100%;
+			max-width: 50%;
 			height: auto;
 		}
 		.description {
