@@ -1,70 +1,270 @@
-/* Reset some default styling */
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	font-family: 'Courier Prime', monospace;
     background-color: black;
-    color: white;
+	color:#e53b44
 }
 
-/* Header styles */
 header {
-    background-color: #fe7f28;
-    color: #fe7f28;
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+	background-color: black;
+	height: 50px;
+	padding: 0 20px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+    border-bottom: 1px solid lightgrey;
 }
 
 nav {
-    max-width: 1200px;
-    margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
+.logo {
+	display: flex;
+	align-items: center;
 }
 
-nav ul li {
-    margin-right: 20px;
+.logo a {
+	color: #e53b44;
+	font-size: 24px;
+	font-weight: bold;
+	text-decoration: none;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
+.nav-links {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
-/* Other section styles */
+.nav-links li a {
+	color: #e53b44;
+	display: block;
+	padding: 0 100px;
+    padding-block: 10px;
+	text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+	background-color: #e53b44;
+	color: black;
+    transform: scale(1.1);
+}
+
 section {
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 0 20px;
+	margin-top: 60px;
+	padding: 20px;
 }
 
-h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #fe7f28;
+.container {
+    height: 200px;
+    overflow-y: scroll;
+    margin-top: 20px;
 }
 
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    color: white;
-}
+/*addition*/
 
-/* Footer styles */
-footer {
-    background-color: black;
-    color: #fe7f28;
-    text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
+table {
+	border-collapse: collapse;
+	width: 100%;
+    border: 1px solid #e53b44;
+	
+  }
+  
+  th, td {
+	padding: 8px;
+	text-align: center;
+	color: #e53b44;
+	border: 1px solid;
+  }
+  
+  th {
+	background-color:#e53b44;
+	color:black;
+  }
+  
+  .scrollable-table-container {
+	max-height: auto;
+    overflow-y: scroll;
+    margin-top: 20px;
+	overflow: auto;
+	/*max-height: 200px; /* Set the maximum height for the container */
+  }
+  
+  .scrollable-table {
+	min-width: auto; 
+  }
+  
+  .scrollable-table thead {
+	position: sticky;
+	top: 0;
+	background-color:#e53b44;
+	z-index: 9999;
+  }
+  
+  .scrollable-table th:first-child,
+  .scrollable-table td:first-child {
+	text-align: center;
+  }
+  
+  .scrollable-table th:not(:first-child),
+  .scrollable-table td:not(:first-child) {
+	white-space: nowrap;
+  }
+  
+  .scrollable-table td:first-child {
+	font-weight: bold;
+  }
+  
+  .scrollable-table td {
+	font-family: 'Courier Prime', monospace;
+	font-size: 14px;
+	line-height: 1.5;
+  }
+  
+  .scrollable-table th,
+  .scrollable-table td {
+	border: 1px solid #e53b44;
+	padding: 10px;
+  }
+  
+  .scrollable-table thead th {
+	background-color: #e53b44;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+  }
+  
+  .scrollable-table tbody th {
+	font-weight: normal;
+  }
+  
+  
+  .scrollable-table-container::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+  .scrollable-table-container::-webkit-scrollbar-track {
+	background: #f1f1f1;
+  }
+  
+  .scrollable-table-container::-webkit-scrollbar-thumb {
+	background-color: #888;
+	border-radius: 5px;
+	border: 3px solid #f1f1f1;
+  }
+  
+  .scrollable-table-container::-webkit-scrollbar-thumb:hover {
+	background-color: #555;
+  }
+  
+
+  .child:hover {
+    background-color: #e53b44;
+	  transform: scale(1.1);
+  }
+
+  a {
+	font-size: 15px;
+	color: white;
+	text-decoration: none;
+  }
+
+
+  /*Added For Scroll*/
+  .table-container {
+	overflow-x: hidden;
+	white-space: nowrap;
+  }
+  
+  .table-container::-webkit-scrollbar {
+	display: none;
+  }
+  
+  .scroll-button {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 1;
+  }
+  
+  .scroll-button.left {
+	left: 0;
+	background: url(left-arrow.png) no-repeat center center;
+  }
+  
+  .scroll-button.right {
+	right: 0;
+	background: url(right-arrow.png) no-repeat center center;
+  }
+  /*******/
+  /** Modal **/
+
+ /* Style for modal background */
+ .modal-background {
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	display: none;
+  }
+  
+  /* Style for modal box */
+  .modal-box {
+	width: 56.25vw; /* 16:9 aspect ratio */
+	height: 31.64vw; /* 16:9 aspect ratio */
+	max-width: 60%;
+	max-height: 60%;
+	position: fixed;
+	z-index: 10000;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #e53b44;
+	padding: 0px;
+	display: none;
+	overflow: hidden;
+	box-sizing: border-box;
+	border: 5px solid #e53b44;
+  }
+  
+  /* Style for modal content */
+  .modal-content {
+	overflow: auto;
+	height: calc(100% - 30px);
+	margin-bottom: 15px;
+  }
+  
+  /* Style for close button */
+  .modal-close {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	cursor: pointer;
+	font-size: 0px;
+  }
+  
+  /* Hide scrollbar */
+  .modal-content::-webkit-scrollbar {
+	width: 0px;
+	background: transparent;
+  }
+
+  .scrollable-table td tr:hover {
+	background-color: #e53b44;
+	color: black;
+	transform: scale(1.1);
+  }
+  
