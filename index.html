@@ -48,8 +48,8 @@
 			color: black;
 		}
 		.about-us-button {
-			background-color: white;
-			color: #000000;
+			background-color: black;
+			color: #fe7f28;
 			padding: 10px 20px;
 			border: none;
 			cursor: pointer;
@@ -64,9 +64,9 @@
 			font-family: 'Courier Prime', monospace;
 		}
 		.about-us-button:hover {
-			background-color: black;
+			background-color: white;
 			transform: translateY(-50%) translateX(3px);
-			color: #fe7f28;
+			color: black;
 		}
 		.section-container {
 			display: flex;
@@ -96,7 +96,7 @@
 			align-items: flex-start;
 			margin-top: 20px;
 		}
-		.download-button  {
+		.download-button {
 			background-color: #fe7f28;
 			color: white;
 			padding: 10px 20px;
@@ -105,8 +105,9 @@
 			font-size: 16px;
 			border-radius: 20px;
 			transition: background-color 0.3s, transform 0.3s;
+			text-decoration: none; /* Remove underline */
 		}
-		.download-button:hover  {
+		.download-button:hover {
 			background-color: #ff9900;
 			transform: translateY(-5px);
 			color: black;
@@ -124,7 +125,7 @@
 				<img src="img/AndroShell_header.png" alt="AndroShell Logo">
 			</a>
 		</div>
-		<a href="https://github.com/theresurrectedodyssey/AndroShell/blob/main/Releases/Version0.0.1/AndroShell_v0.0.1.apk" class="download-button" download>Download AndroShell v0.0.1</a>
+		<a href="https://theresurrectedodyssey.github.io/" class="about-us-button">About Us</a>
 	</header>
 	
 	<section class="section-container">
@@ -138,7 +139,7 @@
 			<p>Android 4.1</p>
 			<p>Minimum Android 8.1 is required for optimum performance</p>
 			<div class="button-container">
-				<button class="download-button">Download AndroShell v0.0.1</button>
+				<a href="https://github.com/theresurrectedodyssey/AndroShell/blob/main/Releases/Version0.0.1/AndroShell_v0.0.1.apk" class="download-button">Download AndroShell v0.0.1</a>
 			</div>
 		</div>
 	</section>
