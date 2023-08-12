@@ -3,7 +3,7 @@ body {
 	padding: 0;
 	font-family: 'Courier Prime', monospace;
     background-color: black;
-	color:#e53b44
+	color:#fe7f28
 }
 
 header {
@@ -14,7 +14,7 @@ header {
 	top: 0;
 	width: 100%;
 	z-index: 1;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 3px solid lightgrey;
 }
 
 nav {
@@ -30,7 +30,7 @@ nav {
 }
 
 .logo a {
-	color: #e53b44;
+	color: #fe7f28;
 	font-size: 24px;
 	font-weight: bold;
 	text-decoration: none;
@@ -44,7 +44,7 @@ nav {
 }
 
 .nav-links li a {
-	color: #e53b44;
+	color: #fe7f28;
 	display: block;
 	padding: 0 100px;
     padding-block: 10px;
@@ -53,7 +53,7 @@ nav {
 }
 
 .nav-links li a:hover {
-	background-color: #e53b44;
+	background-color: #fe7f28;
 	color: black;
     transform: scale(1.1);
 }
@@ -74,19 +74,19 @@ section {
 table {
 	border-collapse: collapse;
 	width: 100%;
-    border: 1px solid #e53b44;
+    border: 1px solid #fe7f28;
 	
   }
   
   th, td {
 	padding: 8px;
 	text-align: center;
-	color: #e53b44;
+	color: #fe7f28;
 	border: 1px solid;
   }
   
   th {
-	background-color:#e53b44;
+	background-color:#fe7f28;
 	color:black;
   }
   
@@ -105,7 +105,7 @@ table {
   .scrollable-table thead {
 	position: sticky;
 	top: 0;
-	background-color:#e53b44;
+	background-color:#fe7f28;
 	z-index: 9999;
   }
   
@@ -131,12 +131,12 @@ table {
   
   .scrollable-table th,
   .scrollable-table td {
-	border: 1px solid #e53b44;
+	border: 1px solid #fe7f28;
 	padding: 10px;
   }
   
   .scrollable-table thead th {
-	background-color: #e53b44;
+	background-color: #fe7f28;
 	position: sticky;
 	top: 0;
 	z-index: 1;
@@ -167,7 +167,7 @@ table {
   
 
   .child:hover {
-    background-color: #e53b44;
+    background-color: #fe7f28;
 	  transform: scale(1.1);
   }
 
@@ -232,12 +232,12 @@ table {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background: #e53b44;
+	background: #fe7f28;
 	padding: 0px;
 	display: none;
 	overflow: hidden;
 	box-sizing: border-box;
-	border: 5px solid #e53b44;
+	border: 5px solid #fe7f28;
   }
   
   /* Style for modal content */
@@ -263,7 +263,7 @@ table {
   }
 
   .scrollable-table td tr:hover {
-	background-color: #e53b44;
+	background-color: #fe7f28;
 	color: black;
 	transform: scale(1.1);
   }
