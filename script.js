@@ -1,4 +1,4 @@
-// Add the 'animate' class to sections when they are in the viewport
+
 function animateSectionsInView() {
     const sections = document.querySelectorAll('section');
     sections.forEach((section) => {
