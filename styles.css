@@ -1,3 +1,7 @@
+
+
+
+
 /* Reset some default styling */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
@@ -10,8 +14,8 @@ body {
 
 /* Header styles */
 header {
-    background-color: black;
-    color: orange;
+    background-color: #fe7f28;
+    color: black;
     padding: 10px 0;
     position: sticky;
     top: 0;
@@ -42,7 +46,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: orange;
+    color: black;
 }
 
 /* Other section styles */
@@ -55,18 +59,20 @@ section {
 h1 {
     font-size: 32px;
     margin-bottom: 20px;
+    color: black;
 }
 
 ul {
     list-style-type: disc;
     margin-left: 20px;
+    color: black;
 }
 
 /* Download button */
 .download-button {
     display: inline-block;
-    background-color: orange;
-    color: black;
+    background-color: black;
+    color: #fe7f28;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -76,35 +82,10 @@ ul {
 /* Footer styles */
 footer {
     background-color: black;
-    color: orange;
+    color: #fe7f28;
     text-align: center;
     padding: 10px 0;
     position: absolute;
     bottom: 0;
     width: 100%;
-}
-
-
-@media screen and (max-width: 768px) {
-    /* Adjustments for smaller screens */
-    header {
-        padding: 5px 0;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 5px 0;
-    }
-
-    .download-button {
-        font-size: 16px;
-    }
-
-    /* Adjustments for smaller screens */
-    section {
-        margin: 30px auto;
-    }
 }
