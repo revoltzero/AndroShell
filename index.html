@@ -41,15 +41,7 @@
 			border-radius: 20px;
 			transition: background-color 0.3s, transform 0.3s;
 		}
-		.nav-links li {
-			margin: 0 10px;
-		}
-		.nav-links a {
-			text-decoration: none;
-			color: black;
-			transition: background-color 0.3s, transform 0.3s, color 0.3s;
-		}
-		.nav-links a:hover {
+		.nav-links:hover {
 			background-color: #ff9900;
 			transform: translateY(-2px);
 			color: white;
@@ -62,15 +54,15 @@
 		}
 		.phone-image {
 			flex: 1;
-			max-width: 50%;
-			height: 50%;
+			max-width: 100%;
+			height: auto;
 		}
 		.description {
 			flex: 1;
 			padding: 20px;
 			color: white;
 		}
-		.download-button {
+		.download-button, .nav-links {
 			background-color: #fe7f28;
 			color: white;
 			padding: 10px 20px;
@@ -81,7 +73,7 @@
 			transition: background-color 0.3s, transform 0.3s;
 		}
 
-		.download-button:hover {
+		.download-button:hover, .nav-links:hover {
 			background-color: #ff9900;
 			transform: translateY(-5px);
 			color: black;
